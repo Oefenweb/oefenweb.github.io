@@ -15,31 +15,17 @@ title: Oefenweb open-source software
       <p>
         <a href="https://github.com/Oefenweb/ansible-adminer">{{ repository.name }}</a> - {{ repository.description }}
         <br />
-        <a href="https://travis-ci.org/{{ repository.full_name }}">
-          <img src="https://img.shields.io/travis/{{ repository.full_name }}.svg" alt="Build Status" />
-        </a>
+        <a href="https://travis-ci.org/{{ repository.full_name }}"><img src="https://img.shields.io/travis/{{ repository.full_name }}.svg" alt="Build Status" /></a>
         {% if repository.open_issues_count >= 5 %}
-        <a href="https://github.com/{{ repository.full_name }}/issues">
-          <img src="https://img.shields.io/badge/issues-{{ repository.open_issues_count }}-red.svg" alt="Issues" />
-        </a>
+        <a href="https://github.com/{{ repository.full_name }}/issues"><img src="https://img.shields.io/badge/issues-{{ repository.open_issues_count }}-red.svg" alt="Issues" /></a>
         {% elsif repository.open_issues_count > 0 %}
-        <a href="https://github.com/{{ repository.full_name }}/issues">
-          <img src="https://img.shields.io/badge/issues-{{ repository.open_issues_count }}-orange.svg" alt="Issues" />
-        </a>
+        <a href="https://github.com/{{ repository.full_name }}/issues"><img src="https://img.shields.io/badge/issues-{{ repository.open_issues_count }}-orange.svg" alt="Issues" /></a>
         {% else %}
-        <a href="https://github.com/{{ repository.full_name }}/issues">
-          <img src="https://img.shields.io/badge/issues-{{ repository.open_issues_count }}-brightgreen.svg" alt="Issues" />
-        </a>
+        <a href="https://github.com/{{ repository.full_name }}/issues"><img src="https://img.shields.io/badge/issues-{{ repository.open_issues_count }}-brightgreen.svg" alt="Issues" /></a>
         {% endif %}
-        <a href="https://github.com/{{ repository.full_name }}/stargazers">
-          <img src="https://img.shields.io/badge/stars-{{ repository.stargazers_count }}-blue.svg" alt="Stars" />
-        </a>
-        <a href="https://github.com/{{ repository.full_name }}/network">
-          <img src="https://img.shields.io/badge/forks-{{ repository.forks_count }}-blue.svg" alt="Forks" />
-        </a>
-        <a href="https://github.com/{{ repository.full_name }}/tags">
-          <img src="https://img.shields.io/github/tag/{{ repository.full_name }}.svg" alt="Tag" />
-        </a>
+        <a href="https://github.com/{{ repository.full_name }}/stargazers"><img src="https://img.shields.io/badge/stars-{{ repository.stargazers_count }}-blue.svg" alt="Stars" /></a>
+        <a href="https://github.com/{{ repository.full_name }}/network"><img src="https://img.shields.io/badge/forks-{{ repository.forks_count }}-blue.svg" alt="Forks" /></a>
+        <a href="https://github.com/{{ repository.full_name }}/tags"><img src="https://img.shields.io/github/tag/{{ repository.full_name }}.svg" alt="Tag" /></a>
       </p>
     </li>
     {% endfor %}

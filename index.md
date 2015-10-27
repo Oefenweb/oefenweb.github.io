@@ -9,6 +9,6 @@ title: Oefenweb open-source software
   [![Build Status](https://img.shields.io/travis/{{ repository.full_name }}.svg)](https://travis-ci.org/{{ repository.full_name }})
   [![Issues](https://img.shields.io/github/issues/{{ repository.full_name }}.svg)]({{ repository.homepage }}/{{ repository.full_name }}/issues)
   [![Tag](https://img.shields.io/github/tag/{{ repository.full_name }}.svg)]({{ repository.homepage }}/{{ repository.full_name }}/tags)
-  [![Stars](https://img.shields.io/github/stars/{{ repository.full_name }}.svg)]({{ repository.homepage }}/{{ repository.full_name }}/stargazers)
-  [![Forks](https://img.shields.io/github/forks/{{ repository.full_name }}.svg)]({{ repository.homepage }}/{{ repository.full_name }}/network)
+  [![Stars](https://img.shields.io/badge/stars-{{ repository.stargazers_count }}-blue.svg)]({{ repository.homepage }}/{{ repository.full_name }}/stargazers)
+  [![Forks](https://img.shields.io/badge/forks-{{ repository.forks_count }}-blue.svg)]({{ repository.homepage }}/{{ repository.full_name }}/network)
 {% endfor %}

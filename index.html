@@ -13,7 +13,7 @@ title: Oefenweb open-source software
     {% for repository in site.github.public_repositories %}
     <li>
       <p>
-        <a href="https://github.com/Oefenweb/ansible-adminer">{{ repository.name }}</a> - {{ repository.description }}
+        <a href="https://github.com/{{ repository.full_name }}">{{ repository.name }}</a> - {{ repository.description }}
         <br />
         <a href="https://travis-ci.org/{{ repository.full_name }}"><img src="https://img.shields.io/travis/{{ repository.full_name }}.svg" alt="Build Status" /></a>
         {% if repository.open_issues_count >= 5 %}

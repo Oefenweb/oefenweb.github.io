@@ -16,7 +16,7 @@ modified: 2024-12-16
       <p>
         <a href="https://github.com/{{ repository.full_name }}">{{ repository.name }}</a> - {{ repository.description }}
         <br />
-        <a href="https://travis-ci.org/{{ repository.full_name }}"><img src="https://img.shields.io/travis/{{ repository.full_name }}.svg" alt="Build Status" /></a>
+        <a href="https://github.com/{{ repository.full_name }}/actions?query=workflow%3ACI"><img src="https://github.com/{{ repository.full_name }}/workflows/CI/badge.svg" alt="Build Status" /></a>
         {% if repository.open_issues_count >= 5 %}
         <a href="https://github.com/{{ repository.full_name }}/issues"><img src="https://img.shields.io/badge/issues-{{ repository.open_issues_count }}-red.svg" alt="Issues" /></a>
         {% elsif repository.open_issues_count > 0 %}
